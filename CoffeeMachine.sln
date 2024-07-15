@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMachine.Core", "CoffeeMachine.Core\CoffeeMachine.Core.csproj", "{79D9C273-9A8A-422B-8390-963F2A948B3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMachine.Core", "CoffeeMachine.Core\CoffeeMachine.Core.csproj", "{79D9C273-9A8A-422B-8390-963F2A948B3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMachine.Api", "CoffeeMachine.Api\CoffeeMachine.Api.csproj", "{5EF02B1D-E636-45AB-9E90-230D8CDCA7F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMachine.Api", "CoffeeMachine.Api\CoffeeMachine.Api.csproj", "{5EF02B1D-E636-45AB-9E90-230D8CDCA7F7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D4F94125-4931-4D38-8FE9-349FB1E2F179}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMachine.Test.UnitTest", "CoffeeMachine.Test.UnitTest\CoffeeMachine.Test.UnitTest.csproj", "{996779B3-9AD9-4243-A75A-7A658CDD44C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMachine.Test.UnitTest", "CoffeeMachine.Test.UnitTest\CoffeeMachine.Test.UnitTest.csproj", "{996779B3-9AD9-4243-A75A-7A658CDD44C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMachine.Integration", "CoffeeMachine.Integration\CoffeeMachine.Integration.csproj", "{9C09A225-C9D7-41AA-9485-BDAF6BE5CCCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{996779B3-9AD9-4243-A75A-7A658CDD44C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{996779B3-9AD9-4243-A75A-7A658CDD44C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{996779B3-9AD9-4243-A75A-7A658CDD44C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C09A225-C9D7-41AA-9485-BDAF6BE5CCCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C09A225-C9D7-41AA-9485-BDAF6BE5CCCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C09A225-C9D7-41AA-9485-BDAF6BE5CCCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C09A225-C9D7-41AA-9485-BDAF6BE5CCCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

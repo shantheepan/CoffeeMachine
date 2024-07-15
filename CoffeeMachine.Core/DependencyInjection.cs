@@ -1,5 +1,6 @@
 ﻿using CoffeeMachine.Core.Abstract;
 using CoffeeMachine.Core.Service;
+using CoffeeMachine.Integration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CoffeeMachine.Core
@@ -11,9 +12,10 @@ namespace CoffeeMachine.Core
             .AddSingleton<IBrewCounterService, BrewCounterService>()
             .AddScoped<CoffeeMachineService>()
             .AddScoped<TeapotService>()
-            .AddScoped<IBrewCoffeeService, BrewCoffeeService>()
+            .AddScoped<IBrewCoffeeService, BrewIcedCoffeeService>()
             .AddScoped<ICoffeeMachineService>(sp => DateTime.Today.Day == 1 && DateTime.Today.Month == 4
-            ? sp.GetService<TeapotService>()
-            : sp.GetService<CoffeeMachineService>());
+                                                    ? sp.GetService<TeapotService>()
+                                                    : sp.GetService<CoffeeMachineService>())
+            .AddWeatherService();
     }
 }
